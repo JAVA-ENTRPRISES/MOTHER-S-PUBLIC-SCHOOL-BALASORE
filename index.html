@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home | Mother's Public School</title>
+
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* ===============================
+       HERO
+    =============================== */
+
+      .hero-overlay {
+        background: linear-gradient(
+          90deg,
+          rgba(0, 40, 28, 0.92) 0%,
+          rgba(0, 40, 28, 0.72) 45%,
+          rgba(0, 40, 28, 0.2) 100%
+        );
+      }
+
+      /* ===============================
+       SECTION TITLE
+    =============================== */
+
+      .section-line {
+        width: 70px;
+        height: 4px;
+        background: #f4c430;
+        border-radius: 20px;
+      }
+
+      /* ===============================
+       CARDS
+    =============================== */
+
+      .feature-card {
+        transition: all 0.35s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+      }
+
+      /* ===============================
+       IMAGE HOVER
+    =============================== */
+
+      .image-card img {
+        transition: transform 0.6s ease;
+      }
+
+      .image-card:hover img {
+        transform: scale(1.08);
+      }
+
+      /* ===============================
+       STATS
+    =============================== */
+
+      .stat-card {
+        transition: 0.3s ease;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-5px);
+      }
+
+      /* ===============================
+       NEWS
+    =============================== */
+
+      .news-card {
+        transition: 0.3s ease;
+      }
+
+      .news-card:hover {
+        transform: translateY(-8px);
+      }
+
+      /* ===============================
+       MARQUEE
+    =============================== */
+
+      .notice-scroll {
+        animation: scrollNotice 18s linear infinite;
+      }
+
+      @keyframes scrollNotice {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      /* ===============================
+       MOBILE
+    =============================== */
+
+      @media (max-width: 768px) {
+        .notice-scroll {
+          animation-duration: 12s;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#FFFDF4] text-gray-800">
+    <!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <div id="header"></div>
+
+    <!-- =========================================================
+     NOTICE BAR
+========================================================= -->
+
+    <section class="bg-[#064D3A] text-white overflow-hidden">
+      <div class="flex items-center max-w-7xl mx-auto">
+        <div
+          class="flex-shrink-0 bg-[#F4C430] text-[#064D3A] font-bold px-5 py-3 z-10"
+        >
+          <i class="fa-solid fa-bullhorn mr-2"></i>
+
+          NOTICE
+        </div>
+
+        <div class="overflow-hidden flex-1">
+          <div class="notice-scroll whitespace-nowrap py-3 text-sm">
+            Admissions Open for Academic Session 2026-27 &nbsp;&nbsp;&nbsp; •
+            &nbsp;&nbsp;&nbsp; Annual Sports Meet &nbsp;&nbsp;&nbsp; •
+            &nbsp;&nbsp;&nbsp; School Admission Enquiry &nbsp;&nbsp;&nbsp; •
+            &nbsp;&nbsp;&nbsp; Parent Teacher Meeting
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     HERO SECTION
+========================================================= -->
+
+    <section class="relative min-h-[680px] flex items-center overflow-hidden">
+      <!-- Background Image -->
+
+      <!-- <img
+        src="images/school6.jpg"
+        alt="Mother's Public School Campus"
+        class="absolute inset-0 w-full h-full object-cover"
+      /> -->
+
+      <!-- Overlay -->
+
+      <div class="absolute inset-0 hero-overlay"></div>
+
+      <!-- Content -->
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+        <div class="max-w-3xl text-white">
+          <div
+            class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-6"
+          >
+            <span class="w-3 h-3 rounded-full bg-[#F4C430]"></span>
+
+            <span class="text-sm font-semibold tracking-wider">
+              WELCOME TO MOTHER'S PUBLIC SCHOOL
+            </span>
+          </div>
+
+          <h1 class="text-5xl md:text-7xl font-black leading-tight">
+            Where
+            <span class="text-[#F4C430]"> Learning </span>
+
+            <br />
+
+            Meets
+            <span class="text-[#F4C430]"> Excellence </span>
+          </h1>
+
+          <p class="mt-7 text-lg md:text-xl text-gray-200 leading-8 max-w-2xl">
+            Inspiring young minds through quality education, strong values,
+            creativity and holistic development to prepare students for a bright
+            and successful future.
+          </p>
+
+          <!-- Buttons -->
+
+          <div class="flex flex-wrap gap-4 mt-9">
+            <a
+              href="admission.html"
+              class="bg-[#F4C430] text-[#064D3A] px-8 py-4 rounded-full font-bold shadow-xl hover:bg-white transition"
+            >
+              Apply for Admission
+
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+
+            <a
+              href="about.html"
+              class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-[#064D3A] transition"
+            >
+              Discover Our School
+            </a>
+          </div>
+
+          <!-- Small information -->
+
+          <div class="flex flex-wrap gap-8 mt-12 text-sm">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-graduation-cap text-[#F4C430] text-xl"></i>
+
+              <span> Quality Education </span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-users text-[#F4C430] text-xl"></i>
+
+              <span> Holistic Development </span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-star text-[#F4C430] text-xl"></i>
+
+              <span> Strong Values </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Curve -->
+
+      <div
+        class="absolute bottom-0 left-0 w-full h-20 bg-[#FFFDF4]"
+        style="clip-path: ellipse(70% 45% at 50% 100%)"
+      ></div>
+    </section>
+
+    <!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+    <section class="py-24 bg-[#FFFDF4]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Image -->
+
+          <div class="relative">
+            <div
+              class="absolute -top-5 -left-5 w-32 h-32 border-8 border-[#F4C430] rounded-3xl"
+            ></div>
+
+            <img
+              src="images/students1.jpg"
+              alt="Students"
+              class="relative z-10 w-full h-[500px] object-cover rounded-[35px] shadow-2xl"
+            />
+
+            <!-- Floating Card -->
+
+            <div
+              class="absolute z-20 bottom-[-25px] right-[-20px] bg-[#064D3A] text-white rounded-2xl px-7 py-5 shadow-2xl"
+            >
+              <p class="text-3xl font-black text-[#F4C430]">25+</p>
+
+              <p class="text-sm">Years of Excellence</p>
+            </div>
+          </div>
+
+          <!-- Content -->
+
+          <div>
+            <p
+              class="text-[#D44706] font-bold uppercase tracking-[3px] text-sm"
+            >
+              About Our School
+            </p>
+
+            <div class="section-line mt-3"></div>
+
+            <h2
+              class="text-4xl md:text-5xl font-black text-[#064D3A] mt-6 leading-tight"
+            >
+              Building
+              <span class="text-[#D44706]"> Tomorrow's Leaders </span>
+            </h2>
+
+            <p class="mt-7 text-gray-600 leading-8">
+              Mother's Public School is committed to providing an inspiring and
+              nurturing environment where every child is encouraged to discover
+              their potential, develop confidence and become a responsible
+              citizen.
+            </p>
+
+            <p class="mt-5 text-gray-600 leading-8">
+              Our approach combines academic excellence, creativity, technology,
+              sports and character development to provide students with a
+              complete educational experience.
+            </p>
+
+            <a
+              href="about.html"
+              class="inline-flex items-center mt-8 bg-[#064D3A] text-white px-7 py-4 rounded-full font-bold hover:bg-[#D44706] transition"
+            >
+              Learn More About Us
+
+              <i class="fa-solid fa-arrow-right ml-3"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     STATISTICS
+========================================================= -->
+
+    <section class="bg-[#064D3A] py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="stat-card text-center text-white p-6">
+            <div class="text-[#F4C430] text-4xl mb-4">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+
+            <h3 class="text-4xl font-black">2500+</h3>
+
+            <p class="text-gray-300 mt-2">Students</p>
+          </div>
+
+          <div class="stat-card text-center text-white p-6">
+            <div class="text-[#F4C430] text-4xl mb-4">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+
+            <h3 class="text-4xl font-black">100+</h3>
+
+            <p class="text-gray-300 mt-2">Teachers & Staff</p>
+          </div>
+
+          <div class="stat-card text-center text-white p-6">
+            <div class="text-[#F4C430] text-4xl mb-4">
+              <i class="fa-solid fa-school"></i>
+            </div>
+
+            <h3 class="text-4xl font-black">25+</h3>
+
+            <p class="text-gray-300 mt-2">Years of Excellence</p>
+          </div>
+
+          <div class="stat-card text-center text-white p-6">
+            <div class="text-[#F4C430] text-4xl mb-4">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+
+            <h3 class="text-4xl font-black">100%</h3>
+
+            <p class="text-gray-300 mt-2">Commitment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     WHY CHOOSE US
+========================================================= -->
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+
+        <div class="text-center max-w-3xl mx-auto">
+          <p class="text-[#D44706] uppercase tracking-[3px] text-sm font-bold">
+            Why Choose Us
+          </p>
+
+          <div class="section-line mx-auto mt-3"></div>
+
+          <h2 class="text-4xl md:text-5xl font-black text-[#064D3A] mt-6">
+            Education Beyond
+            <span class="text-[#D44706]"> Classrooms </span>
+          </h2>
+
+          <p class="mt-5 text-gray-600 leading-7">
+            We focus on the complete development of every student through
+            academics, creativity, technology, sports and values.
+          </p>
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
+          <!-- Card 1 -->
+
+          <div
+            class="feature-card bg-[#FFFDF4] border border-gray-100 rounded-3xl p-8 shadow-lg"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-[#064D3A] text-[#F4C430] flex items-center justify-center text-2xl"
+            >
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-[#064D3A] mt-6">
+              Academic Excellence
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-7 text-sm">
+              Strong academic foundation with engaging teaching methods and
+              continuous assessment.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div
+            class="feature-card bg-[#FFFDF4] border border-gray-100 rounded-3xl p-8 shadow-lg"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-[#D44706] text-white flex items-center justify-center text-2xl"
+            >
+              <i class="fa-solid fa-flask"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-[#064D3A] mt-6">
+              Modern Laboratories
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-7 text-sm">
+              Practical learning experiences supported by well-equipped science
+              and computer laboratories.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div
+            class="feature-card bg-[#FFFDF4] border border-gray-100 rounded-3xl p-8 shadow-lg"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-[#F4C430] text-[#064D3A] flex items-center justify-center text-2xl"
+            >
+              <i class="fa-solid fa-futbol"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-[#064D3A] mt-6">
+              Sports & Activities
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-7 text-sm">
+              Encouraging teamwork, discipline and confidence through sports and
+              co-curricular activities.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+
+          <div
+            class="feature-card bg-[#FFFDF4] border border-gray-100 rounded-3xl p-8 shadow-lg"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-[#064D3A] text-[#F4C430] flex items-center justify-center text-2xl"
+            >
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-[#064D3A] mt-6">
+              Character Building
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-7 text-sm">
+              Developing responsible, confident and compassionate individuals
+              with strong values.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRINCIPAL MESSAGE
+========================================================= -->
+
+    <section class="py-24 bg-[#FFFDF4]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="bg-[#064D3A] rounded-[40px] overflow-hidden shadow-2xl">
+          <div class="grid lg:grid-cols-5">
+            <!-- Image -->
+
+            <div class="lg:col-span-2 relative min-h-[420px]">
+              <img
+                src="images/principal.jpg"
+                alt="Principal"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#064D3A]/80 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-7 left-7 text-white">
+                <p class="text-[#F4C430] text-sm uppercase tracking-widest">
+                  Principal
+                </p>
+
+                <h3 class="text-2xl font-bold mt-1">Principal's Message</h3>
+              </div>
+            </div>
+
+            <!-- Message -->
+
+            <div
+              class="lg:col-span-3 p-10 md:p-14 text-white flex items-center"
+            >
+              <div>
+                <i class="fa-solid fa-quote-left text-[#F4C430] text-4xl"></i>
+
+                <h2 class="text-3xl md:text-4xl font-black mt-5">
+                  Empowering Every Child to Reach Their Potential
+                </h2>
+
+                <p class="mt-6 text-gray-200 leading-8">
+                  Our vision is to create an environment where every student
+                  feels valued, inspired and motivated to learn. We believe
+                  education is not only about academic achievement but also
+                  about developing character, confidence and compassion.
+                </p>
+
+                <p class="mt-5 text-gray-200 leading-8">
+                  Together with parents and the community, we strive to provide
+                  every child with the opportunities they need to succeed.
+                </p>
+
+                <a
+                  href="about.html"
+                  class="inline-flex items-center mt-7 text-[#F4C430] font-bold hover:text-white transition"
+                >
+                  Read More
+
+                  <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CAMPUS LIFE
+========================================================= -->
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-6"
+        >
+          <div>
+            <p
+              class="text-[#D44706] uppercase tracking-[3px] text-sm font-bold"
+            >
+              Explore Our Campus
+            </p>
+
+            <div class="section-line mt-3"></div>
+
+            <h2 class="text-4xl md:text-5xl font-black text-[#064D3A] mt-5">
+              Life at Mother's
+            </h2>
+          </div>
+
+          <a
+            href="gallery.html"
+            class="inline-flex items-center text-[#064D3A] font-bold hover:text-[#D44706] transition"
+          >
+            View Full Gallery
+
+            <i class="fa-solid fa-arrow-right ml-3"></i>
+          </a>
+        </div>
+
+        <!-- Gallery -->
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+          <div
+            class="image-card relative overflow-hidden rounded-3xl h-[280px] group"
+          >
+            <img
+              src="images/school6.jpg"
+              class="w-full h-full object-cover"
+              alt="School Campus"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+
+            <p class="absolute bottom-5 left-5 text-white font-bold">
+              Our Campus
+            </p>
+          </div>
+
+          <div
+            class="image-card relative overflow-hidden rounded-3xl h-[280px] group"
+          >
+            <img
+              src="images/students1.jpg"
+              class="w-full h-full object-cover"
+              alt="Students"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+
+            <p class="absolute bottom-5 left-5 text-white font-bold">
+              Student Life
+            </p>
+          </div>
+
+          <div
+            class="image-card relative overflow-hidden rounded-3xl h-[280px] group"
+          >
+            <img
+              src="images/students2.jpg"
+              class="w-full h-full object-cover"
+              alt="Students Activities"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+
+            <p class="absolute bottom-5 left-5 text-white font-bold">
+              Activities
+            </p>
+          </div>
+
+          <div
+            class="image-card relative overflow-hidden rounded-3xl h-[280px] group"
+          >
+            <img
+              src="images/students3.jpg"
+              class="w-full h-full object-cover"
+              alt="School Activities"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+
+            <p class="absolute bottom-5 left-5 text-white font-bold">
+              Learning Together
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     NEWS & EVENTS
+========================================================= -->
+
+    <section class="py-24 bg-[#064D3A]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-[#F4C430] uppercase tracking-[3px] text-sm font-bold">
+            What's Happening
+          </p>
+
+          <div class="section-line mx-auto mt-3"></div>
+
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-6">
+            Latest News & Events
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-14">
+          <!-- News 1 -->
+
+          <article
+            class="news-card bg-white rounded-3xl overflow-hidden shadow-xl"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="images/dance2.jpg"
+                alt="Annual Function"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute top-4 left-4 bg-[#F4C430] text-[#064D3A] px-4 py-2 rounded-full text-xs font-bold"
+              >
+                EVENT
+              </div>
+            </div>
+
+            <div class="p-7">
+              <p class="text-xs text-[#D44706] font-bold uppercase">
+                School Activities
+              </p>
+
+              <h3 class="text-xl font-bold text-[#064D3A] mt-2">
+                Annual Function
+              </h3>
+
+              <p class="text-gray-600 text-sm leading-6 mt-3">
+                Celebrating the creativity and talents of our students through a
+                memorable annual celebration.
+              </p>
+
+              <a
+                href="#"
+                class="inline-flex items-center mt-5 text-[#D44706] font-bold text-sm"
+              >
+                Read More
+
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- News 2 -->
+
+          <article
+            class="news-card bg-white rounded-3xl overflow-hidden shadow-xl"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="images/exibition.jpg"
+                alt="Science Exhibition"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute top-4 left-4 bg-[#F4C430] text-[#064D3A] px-4 py-2 rounded-full text-xs font-bold"
+              >
+                ACADEMICS
+              </div>
+            </div>
+
+            <div class="p-7">
+              <p class="text-xs text-[#D44706] font-bold uppercase">Learning</p>
+
+              <h3 class="text-xl font-bold text-[#064D3A] mt-2">
+                Science Exhibition
+              </h3>
+
+              <p class="text-gray-600 text-sm leading-6 mt-3">
+                Students showcase innovative ideas, experiments and projects
+                through practical learning.
+              </p>
+
+              <a
+                href="#"
+                class="inline-flex items-center mt-5 text-[#D44706] font-bold text-sm"
+              >
+                Read More
+
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- News 3 -->
+
+          <article
+            class="news-card bg-white rounded-3xl overflow-hidden shadow-xl"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="images/sports2.jpg"
+                alt="Sports Meet"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute top-4 left-4 bg-[#F4C430] text-[#064D3A] px-4 py-2 rounded-full text-xs font-bold"
+              >
+                SPORTS
+              </div>
+            </div>
+
+            <div class="p-7">
+              <p class="text-xs text-[#D44706] font-bold uppercase">
+                Student Development
+              </p>
+
+              <h3 class="text-xl font-bold text-[#064D3A] mt-2">
+                Annual Sports Meet
+              </h3>
+
+              <p class="text-gray-600 text-sm leading-6 mt-3">
+                Encouraging teamwork, discipline and sportsmanship through
+                exciting sporting activities.
+              </p>
+
+              <a
+                href="#"
+                class="inline-flex items-center mt-5 text-[#D44706] font-bold text-sm"
+              >
+                Read More
+
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ADMISSION CTA
+========================================================= -->
+
+    <section class="relative py-24 overflow-hidden">
+      <!-- Background -->
+
+      <div class="absolute inset-0 bg-[#F4C430]"></div>
+
+      <!-- Decorative circles -->
+
+      <div
+        class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-white/20"
+      ></div>
+
+      <div
+        class="absolute -bottom-40 -left-20 w-96 h-96 rounded-full bg-[#064D3A]/10"
+      ></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <p class="text-[#064D3A] uppercase tracking-[4px] font-bold text-sm">
+          Admissions Open 2026-27
+        </p>
+
+        <h2 class="text-4xl md:text-6xl font-black text-[#064D3A] mt-5">
+          Give Your Child
+          <br />
+          A Brighter Future
+        </h2>
+
+        <p class="max-w-2xl mx-auto mt-6 text-[#064D3A]/80 text-lg leading-8">
+          Join Mother's Public School and give your child an environment where
+          learning, creativity, confidence and character grow together.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 mt-9">
+          <a
+            href="admission.html"
+            class="bg-[#064D3A] text-white px-9 py-4 rounded-full font-bold shadow-xl hover:bg-[#D44706] transition"
+          >
+            Apply Now
+
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+
+          <a
+            href="contact.html"
+            class="bg-white text-[#064D3A] px-9 py-4 rounded-full font-bold shadow-lg hover:bg-[#064D3A] hover:text-white transition"
+          >
+            Contact School
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+    <div id="footer"></div>
+
+    <!-- =========================================================
+     MAIN JS
+========================================================= -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

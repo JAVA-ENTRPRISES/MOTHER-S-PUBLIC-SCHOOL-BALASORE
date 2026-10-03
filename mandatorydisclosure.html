@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mandatory Disclosure | Mother's Public School</title>
+
+    <link rel="icon" type="image/png" href="images/log.png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+      }
+
+      table {
+        min-width: 700px;
+      }
+
+      .disclosure-card {
+        transition: 0.3s ease;
+      }
+
+      .disclosure-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .section-title {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        right: -50px;
+        top: -70px;
+      }
+
+      @media print {
+        #header,
+        #footer,
+        .hero,
+        .top-button {
+          display: none !important;
+        }
+
+        body {
+          background: white !important;
+        }
+
+        .disclosure-card {
+          box-shadow: none !important;
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f4f7f5] text-gray-800">
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- HERO -->
+    <section class="hero relative mt-24 md:mt-28 overflow-hidden">
+      <div class="absolute inset-0 bg-[#06281b]"></div>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-[#06281b] via-[#06281b]/95 to-[#0F6B45]/70"
+      ></div>
+
+      <div
+        class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#F4C430]/20 blur-3xl"
+      ></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 py-24 md:py-28">
+        <div class="max-w-4xl">
+
+          <div
+            class="inline-flex items-center gap-3 border border-[#F4C430]/50 bg-white/10 backdrop-blur-md text-white px-5 py-3 rounded-full"
+          >
+            <span
+              class="w-9 h-9 rounded-xl bg-[#F4C430] text-[#06281b] flex items-center justify-center"
+            >
+              <i class="fa-solid fa-file-lines"></i>
+            </span>
+
+            <span class="font-semibold">
+              School Information
+            </span>
+          </div>
+
+          <h1
+            class="text-4xl md:text-6xl lg:text-7xl font-black text-white mt-7 leading-tight"
+          >
+            Mandatory
+            <span class="text-[#F4C430]">Public Disclosure</span>
+          </h1>
+
+          <div class="w-24 h-1 bg-[#F4C430] mt-7 rounded-full"></div>
+
+          <p
+            class="text-gray-200 text-lg md:text-xl mt-7 max-w-2xl leading-8"
+          >
+            Complete information and documents related to the school, academics,
+            staff and infrastructure.
+          </p>
+
+        </div>
+      </div>
+
+      <!-- GOLD WAVE -->
+      <div
+        class="absolute bottom-0 left-0 right-0 h-5 bg-[#F4C430]"
+        style="
+          clip-path: polygon(
+            0 60%,
+            12% 20%,
+            25% 60%,
+            40% 25%,
+            55% 65%,
+            70% 25%,
+            85% 60%,
+            100% 20%,
+            100% 100%,
+            0 100%
+          );
+        "
+      ></div>
+    </section>
+
+    <!-- PAGE CONTENT -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+
+      <!-- TOP NOTICE -->
+      <div
+        class="bg-white rounded-[28px] border border-gray-200 shadow-sm p-6 md:p-8 mb-10 flex flex-col md:flex-row md:items-center gap-5"
+      >
+        <div
+          class="w-14 h-14 shrink-0 rounded-2xl bg-[#e8f3ee] text-[#0F6B45] flex items-center justify-center text-2xl"
+        >
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-xl text-[#06281b]">
+            Mandatory Public Disclosure
+          </h2>
+
+          <p class="text-gray-600 mt-1">
+            The following information and documents are provided for public
+            disclosure.
+          </p>
+        </div>
+      </div>
+
+      <!-- TWO COLUMN START -->
+      <div class="grid lg:grid-cols-2 gap-7">
+
+        <!-- ================= TABLE A ================= -->
+        <section
+          class="disclosure-card bg-white rounded-[28px] shadow-lg border border-gray-200 overflow-hidden"
+        >
+          <div
+            class="section-title bg-gradient-to-r from-[#9f1d2e] to-[#c63b2d] text-white px-6 py-5 flex items-center gap-4"
+          >
+            <div
+              class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <h2 class="text-xl font-extrabold">
+              A: GENERAL INFORMATION
+            </h2>
+          </div>
+
+          <div class="table-wrap p-3 md:p-4">
+            <table class="w-full border-collapse text-sm">
+              <thead>
+                <tr class="bg-[#9f1d2e] text-white">
+                  <th class="border border-white/20 px-4 py-3 text-left">
+                    SL NO.
+                  </th>
+
+                  <th class="border border-white/20 px-4 py-3 text-left">
+                    INFORMATION
+                  </th>
+
+                  <th class="border border-white/20 px-4 py-3 text-left">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="border px-4 py-3">1</td>
+                  <td class="border px-4 py-3">
+                    NAME OF THE SCHOOL
+                  </td>
+                  <td class="border px-4 py-3">
+                    Mother's Public School
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">2</td>
+                  <td class="border px-4 py-3">
+                    AFFILIATION NO. (IF APPLICABLE)
+                  </td>
+                  <td class="border px-4 py-3">NA</td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">3</td>
+                  <td class="border px-4 py-3">
+                    SCHOOL CODE (IF APPLICABLE)
+                  </td>
+                  <td class="border px-4 py-3">NA</td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">4</td>
+                  <td class="border px-4 py-3">
+                    COMPLETE ADDRESS WITH PIN CODE
+                  </td>
+                  <td class="border px-4 py-3">
+                    Saragan, Sadar, Balasore, 756002
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">5</td>
+                  <td class="border px-4 py-3">
+                    PRINCIPAL NAME AND QUALIFICATION
+                  </td>
+                  <td class="border px-4 py-3">
+                    MRS. SASMITA PATNAIK AND M.SC, B.ED
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">6</td>
+                  <td class="border px-4 py-3">
+                    SCHOOL EMAIL ID
+                  </td>
+                  <td class="border px-4 py-3 break-all">
+                    motherspublicschoolsaragan1@gmail.com
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">7</td>
+                  <td class="border px-4 py-3">
+                    CONTACT DETAILS
+                  </td>
+                  <td class="border px-4 py-3">
+                    +91-8617795051
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= TABLE B ================= -->
+        <section
+          class="disclosure-card bg-white rounded-[28px] shadow-lg border border-gray-200 overflow-hidden"
+        >
+          <div
+            class="section-title bg-gradient-to-r from-[#174d7a] to-[#0F6B45] text-white px-6 py-5 flex items-center gap-4"
+          >
+            <div
+              class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-folder-open"></i>
+            </div>
+
+            <h2 class="text-xl font-extrabold">
+              B: DOCUMENTS AND INFORMATION
+            </h2>
+          </div>
+
+          <div class="table-wrap p-3 md:p-4">
+            <table class="w-full border-collapse text-sm">
+              <thead>
+                <tr class="bg-[#174d7a] text-white">
+                  <th class="border border-white/20 px-4 py-3">
+                    SL NO.
+                  </th>
+
+                  <th class="border border-white/20 px-4 py-3 text-left">
+                    DOCUMENTS / INFORMATION
+                  </th>
+
+                  <th class="border border-white/20 px-4 py-3">
+                    UPLOAD DOCUMENTS
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td class="border px-4 py-3">1</td>
+
+                  <td class="border px-4 py-3">
+                    COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT
+                    EXTENSION OF AFFILIATION, IF ANY
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/affiliation.pdf"
+                      target="_blank"
+                      class="inline-flex items-center gap-2 text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">2</td>
+
+                  <td class="border px-4 py-3">
+                    COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL
+                    CERTIFICATE, AS APPLICABLE
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/trust.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">3</td>
+
+                  <td class="border px-4 py-3">
+                    COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF
+                    APPLICABLE, BY THE STATE GOVT./UT
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/noc.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">4</td>
+
+                  <td class="border px-4 py-3">
+                    COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND
+                    IT’S RENEWAL IF APPLICABLE
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/cor.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">5</td>
+
+                  <td class="border px-4 py-3">
+                    COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE
+                    NATIONAL BUILDING CODE
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/building.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">6</td>
+
+                  <td class="border px-4 py-3">
+                    COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE
+                    COMPETENT AUTHORITY
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/fire.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">7</td>
+
+                  <td class="border px-4 py-3">
+                    COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR
+                    AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/self.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">8</td>
+
+                  <td class="border px-4 py-3">
+                    COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/water.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= TABLE C ================= -->
+        <section
+          class="disclosure-card bg-white rounded-[28px] shadow-lg border border-gray-200 overflow-hidden"
+        >
+          <div
+            class="section-title bg-gradient-to-r from-[#087f5b] to-[#0F6B45] text-white px-6 py-5 flex items-center gap-4"
+          >
+            <div
+              class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <h2 class="text-xl font-extrabold">
+              C: RESULT AND ACADEMICS
+            </h2>
+          </div>
+
+          <div class="table-wrap p-3 md:p-4">
+            <table class="w-full border-collapse text-sm">
+
+              <thead>
+                <tr class="bg-[#087f5b] text-white">
+                  <th class="border px-4 py-3">
+                    SL NO.
+                  </th>
+
+                  <th class="border px-4 py-3">
+                    DOCUMENTS / INFORMATION
+                  </th>
+
+                  <th class="border px-4 py-3">
+                    UPLOAD DOCUMENTS
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td class="border px-4 py-3">1</td>
+
+                  <td class="border px-4 py-3">
+                    FEE STRUCTURE OF THE SCHOOL
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/fees.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">2</td>
+
+                  <td class="border px-4 py-3">
+                    ANNUAL ACADEMIC CALENDAR
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/cal.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">3</td>
+
+                  <td class="border px-4 py-3">
+                    LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/smc.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">4</td>
+
+                  <td class="border px-4 py-3">
+                    LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS
+                  </td>
+
+                  <td class="border px-4 py-3 text-center">
+                    <a
+                      href="images/pdfs/pta.pdf"
+                      target="_blank"
+                      class="text-[#c63b2d] underline font-bold"
+                    >
+                      VIEW DOCUMENTS
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">5</td>
+
+                  <td class="border px-4 py-3">
+                    LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER
+                    APPLICABLILITY
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    N.A
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= TABLE D ================= -->
+        <section
+          class="disclosure-card bg-white rounded-[28px] shadow-lg border border-gray-200 overflow-hidden"
+        >
+          <div
+            class="section-title bg-gradient-to-r from-[#514394] to-[#6b55a8] text-white px-6 py-5 flex items-center gap-4"
+          >
+            <div
+              class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <h2 class="text-xl font-extrabold">
+              D: STAFF (TEACHING)
+            </h2>
+          </div>
+
+          <div class="table-wrap p-3 md:p-4">
+            <table class="w-full border-collapse text-sm">
+
+              <thead>
+                <tr class="bg-[#514394] text-white">
+                  <th class="border px-4 py-3">
+                    SL NO.
+                  </th>
+
+                  <th class="border px-4 py-3 text-left">
+                    INFORMATION
+                  </th>
+
+                  <th class="border px-4 py-3">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td class="border px-4 py-3">1</td>
+
+                  <td class="border px-4 py-3">
+                    PRINCIPAL
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    01
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3 align-top">
+                    2
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    TOTAL NO. OF TEACHERS
+
+                    <div class="mt-3 space-y-2 text-gray-700">
+                      <div>(I) PGT</div>
+                      <div>(II) TGT</div>
+                      <div>(III) PRT</div>
+                    </div>
+                  </td>
+
+                  <td class="border px-4 py-3 align-top">
+                    27
+
+                    <div class="mt-3 space-y-2">
+                      <div>06</div>
+                      <div>06</div>
+                      <div>07</div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">
+                    3
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    TEACHERS SECTION RATIO
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    1:1.5
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-4 py-3">
+                    4
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    DETAILS OF SPECIAL EDUCATOR
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    01
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="border px-4 py-3">
+                    5
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    DETAILS OF COUNSELLOR AND WELLNESS TEACHER
+                  </td>
+
+                  <td class="border px-4 py-3">
+                    02
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= RESULT CLASS X ================= -->
+        <section
+          class="disclosure-card bg-white rounded-[28px] shadow-lg border border-gray-200 overflow-hidden"
+        >
+          <div
+            class="section-title bg-gradient-to-r from-[#e66f00] to-[#f28c28] text-white px-6 py-5 flex items-center gap-4"
+          >
+            <div
+              class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-chart-column"></i>
+            </div>
+
+            <h2 class="text-xl font-extrabold">
+              RESULT CLASS: X
+            </h2>
+          </div>
+
+          <div class="table-wrap p-3 md:p-4">
+            <table class="w-full border-collapse text-sm">
+
+              <thead>
+                <tr class="bg-[#e66f00] text-white">
+                  <th class="border px-3 py-3">SL NO.</th>
+                  <th class="border px-3 py-3">YEAR</th>
+                  <th class="border px-3 py-3">
+                    NO. OF REGISTERED STUDENTS
+                  </th>
+                  <th class="border px-3 py-3">
+                    NO. OF STUDENTS PASSED
+                  </th>
+                  <th class="border px-3 py-3">
+                    PASS PERCENTAGE
+                  </th>
+                  <th class="border px-3 py-3">
+                    REMARKS
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td class="border px-3 py-3">1</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-3 py-3">2</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= RESULT CLASS XII ================= -->
+        <section
+          class="disclosure-card bg-white rounded-[28px] shadow-lg border border-gray-200 overflow-hidden"
+        >
+          <div
+            class="section-title bg-gradient-to-r from-[#087d91] to-[#006477] text-white px-6 py-5 flex items-center gap-4"
+          >
+            <div
+              class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h2 class="text-xl font-extrabold">
+              RESULT CLASS: XII
+            </h2>
+          </div>
+
+          <div class="table-wrap p-3 md:p-4">
+            <table class="w-full border-collapse text-sm">
+
+              <thead>
+                <tr class="bg-[#087d91] text-white">
+                  <th class="border px-3 py-3">SL NO.</th>
+                  <th class="border px-3 py-3">YEAR</th>
+                  <th class="border px-3 py-3">
+                    NO. OF REGISTERED STUDENTS
+                  </th>
+                  <th class="border px-3 py-3">
+                    NO. OF STUDENTS PASSED
+                  </th>
+                  <th class="border px-3 py-3">
+                    PASS PERCENTAGE
+                  </th>
+                  <th class="border px-3 py-3">
+                    REMARKS
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td class="border px-3 py-3">1</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                </tr>
+
+                <tr class="bg-gray-50">
+                  <td class="border px-3 py-3">2</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                  <td class="border px-3 py-3">--</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================= TABLE E ================= -->
+      <section
+        class="disclosure-card bg-white rounded-[28px] shadow-lg border border-gray-200 overflow-hidden mt-7"
+      >
+
+        <div
+          class="section-title bg-gradient-to-r from-[#174d7a] to-[#245c83] text-white px-6 py-5 flex items-center gap-4"
+        >
+          <div
+            class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl"
+          >
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+
+          <h2 class="text-xl font-extrabold">
+            E: SCHOOL INFRASTRUCTURE
+          </h2>
+        </div>
+
+        <div class="table-wrap p-3 md:p-4">
+
+          <table class="w-full border-collapse text-sm">
+
+            <thead>
+              <tr class="bg-[#245c83] text-white">
+
+                <th class="border border-white/20 px-4 py-3">
+                  SL NO.
+                </th>
+
+                <th class="border border-white/20 px-4 py-3 text-left">
+                  INFORMATION
+                </th>
+
+                <th class="border border-white/20 px-4 py-3 text-left">
+                  DETAILS
+                </th>
+
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td class="border px-4 py-3">
+                  1
+                </td>
+
+                <td class="border px-4 py-3">
+                  TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)
+                </td>
+
+                <td class="border px-4 py-3">
+                  6000
+                </td>
+              </tr>
+
+              <tr class="bg-gray-50">
+
+                <td class="border px-4 py-3">
+                  2
+                </td>
+
+                <td class="border px-4 py-3">
+                  NO. AND SIZE OF THE CLASS ROOMS (IN SQUARE MTR)
+                </td>
+
+                <td class="border px-4 py-3">
+                  35 & 50 SQ.MT
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="border px-4 py-3">
+                  3
+                </td>
+
+                <td class="border px-4 py-3">
+                  NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS
+                  (IN SQ MTR)
+                </td>
+
+                <td class="border px-4 py-3">
+                  5 & 57 SQ. MT
+                </td>
+
+              </tr>
+
+              <tr class="bg-gray-50">
+
+                <td class="border px-4 py-3">
+                  4
+                </td>
+
+                <td class="border px-4 py-3">
+                  INTERNET FACILITY (Y/N)
+                </td>
+
+                <td class="border px-4 py-3">
+                  YES
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="border px-4 py-3">
+                  5
+                </td>
+
+                <td class="border px-4 py-3">
+                  NO. OF GIRLS TOILETS
+                </td>
+
+                <td class="border px-4 py-3">
+                  6
+                </td>
+
+              </tr>
+
+              <tr class="bg-gray-50">
+
+                <td class="border px-4 py-3">
+                  6
+                </td>
+
+                <td class="border px-4 py-3">
+                  NO. OF BOYS TOILETS
+                </td>
+
+                <td class="border px-4 py-3">
+                  6
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="border px-4 py-3">
+                  7
+                </td>
+
+                <td class="border px-4 py-3">
+                  LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL
+                  COVERING THE INFRASTRUCTURE OF THE SCHOOL
+                </td>
+
+                <td class="border px-4 py-3">
+                  YES
+                </td>
+
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+      </section>
+
+      <!-- BOTTOM NOTE -->
+      <div
+        class="mt-10 rounded-[28px] bg-[#06281b] text-white p-7 md:p-9 flex flex-col md:flex-row items-center justify-between gap-6"
+      >
+
+        <div class="flex items-center gap-5">
+
+          <div
+            class="w-14 h-14 rounded-2xl bg-[#F4C430] text-[#06281b] flex items-center justify-center text-xl"
+          >
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-xl">
+              Public Disclosure
+            </h3>
+
+            <p class="text-gray-300 mt-1">
+              Transparency in education and school administration.
+            </p>
+          </div>
+
+        </div>
+
+        <button
+          onclick="window.print()"
+          class="bg-[#F4C430] text-[#06281b] px-6 py-3 rounded-xl font-bold hover:scale-105 transition"
+        >
+          <i class="fa-solid fa-print mr-2"></i>
+          Print Disclosure
+        </button>
+
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- SCROLL TO TOP -->
+    <button
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="top-button fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#0F6B45] text-white shadow-xl hover:bg-[#06281b] transition z-50"
+      aria-label="Scroll to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
